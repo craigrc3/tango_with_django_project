@@ -2,7 +2,7 @@ from django.contrib import admin
 
 # Register your models here.
 
-from rango.models import Category, Page
+from rango.models import Category, Page, UserProfile
 
 # Update the page admin display
 class PageAdmin(admin.ModelAdmin):
@@ -16,3 +16,5 @@ class CategoryAdmin(admin.ModelAdmin):
 admin.site.register(Category, CategoryAdmin)
 
 admin.site.register(Page, PageAdmin)
+
+admin.site.register(UserProfile)
